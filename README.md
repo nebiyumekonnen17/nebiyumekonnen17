@@ -12,6 +12,14 @@
   <a href="https://github.com/nebiyumekonnen17?tab=repositories">Repositories</a>
 </p>
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nebiyumekonnen17/nebiyumekonnen17/main/assets/developer-typing.svg" alt="Animated typing: Software Developer, AWS Cloud Builder, Java, React, Python" width="900" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/nebiyumekonnen17/nebiyumekonnen17/main/assets/binary-rain-subtle.svg" alt="Subtle falling green binary digits" width="1135" />
+</p>
+
 ### Featured Projects
 
 | Project | What it does |
