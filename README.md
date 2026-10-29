@@ -1,8 +1,8 @@
 <!-- Actual headshot preserved; 1/0 overlay is a code-themed graphic. -->
 <a href="https://nebiyumekonnen.com" title="Nebiyu Mekonnen — Software Developer & Cloud Builder">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nebiyumekonnen17/nebiyumekonnen17/main/dark_mode.png" />
-    <img src="https://raw.githubusercontent.com/nebiyumekonnen17/nebiyumekonnen17/main/light_mode.png" alt="Nebiyu Mekonnen — developer terminal profile with his actual headshot and binary 0/1 code overlay" width="1135" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/nebiyumekonnen17/nebiyumekonnen17/main/dark_animated.gif" />
+    <img src="https://raw.githubusercontent.com/nebiyumekonnen17/nebiyumekonnen17/main/light_animated.gif" alt="Nebiyu Mekonnen — developer terminal profile with his actual headshot and binary 0/1 code overlay" width="1135" />
   </picture>
 </a>
 
@@ -14,10 +14,6 @@
 
 <p align="center">
   <img src="https://raw.githubusercontent.com/nebiyumekonnen17/nebiyumekonnen17/main/assets/developer-typing.svg" alt="Animated typing: Software Developer, AWS Cloud Builder, Java, React, Python" width="900" />
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/nebiyumekonnen17/nebiyumekonnen17/main/assets/binary-rain-subtle.svg" alt="Subtle falling green binary digits" width="1135" />
 </p>
 
 ### Featured Projects
