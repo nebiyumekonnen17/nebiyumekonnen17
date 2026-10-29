@@ -7,6 +7,7 @@ on:
   push:
     paths:
       - 'generate_profile.py'
+      - 'animate_profile.py'
       - 'assets/headshot.png'
       - '.github/workflows/update-profile.yml'
 
@@ -26,12 +27,14 @@ jobs:
       - name: Generate cards using uploaded photo and public GitHub statistics
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python generate_profile.py
+        run: |
+          python generate_profile.py
+          python animate_profile.py
       - name: Publish refreshed profile PNG files
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add dark_mode.png light_mode.png
+          git add dark_mode.png light_mode.png dark_animated.gif light_animated.gif
           if ! git diff --staged --quiet; then
             git commit -m "chore: refresh binary portrait and stats"
             git push
