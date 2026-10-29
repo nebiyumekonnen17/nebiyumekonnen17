@@ -26,11 +26,14 @@ def animate(theme):
                     continue
                 bit = "1" if (seed * 11 + step // 3 + k) % 2 else "0"
                 # Very faint digits over the photo/card to preserve readability.
-                alpha = int((24 - 3*k) * (0.58 if theme == "light" else 1))
+                alpha = int((118 - 12*k) * (0.80 if theme == "light" else 1))
+                # Keep the face clear while allowing the binary to show over card margins.
+                if 35 <= col <= 435 and 110 <= y <= 563:
+                    alpha = int(alpha * 0.12)
                 rgb = (17, 111, 77) if theme == "light" else (63, 185, 80)
                 d.text((col + 4, y), bit, font=font, fill=(*rgb, alpha))
         frame = Image.alpha_composite(base, layer).convert("RGB")
-        frames.append(frame.quantize(colors=96, method=Image.Quantize.FASTOCTREE))
+        frames.append(frame.quantize(colors=256, method=Image.Quantize.FASTOCTREE))
     dest = ROOT / f"{theme}_animated.gif"
     frames[0].save(dest, save_all=True, append_images=frames[1:], duration=130,
                    loop=0, optimize=True, disposal=2)
