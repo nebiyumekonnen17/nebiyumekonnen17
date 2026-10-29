@@ -31,17 +31,17 @@ def animate(theme):
                     continue
                 bit = "1" if (seed * 11 + step + k) % 2 else "0"
                 if theme == "dark":
-                    rgb_head, rgb_tail = (105, 255, 145), (63, 185, 80)
-                    alpha = max(18, 128 - k * 12)
+                    rgb_head, rgb_tail = (50, 235, 112), (30, 165, 81)
+                    alpha = max(38, 185 - k * 18)
                 else:
-                    rgb_head, rgb_tail = (36, 170, 110), (22, 120, 78)
-                    alpha = max(14, 92 - k * 9)
+                    rgb_head, rgb_tail = (12, 122, 73), (14, 99, 61)
+                    alpha = max(35, 175 - k * 17)
                 if inside_face(col + 5, y):
-                    alpha = int(alpha * 0.16)
+                    alpha = int(alpha * 0.08)
                 if col >= 450:
-                    alpha = int(alpha * 0.62)
+                    alpha = int(alpha * 0.76)
                 if y >= 545:
-                    alpha = int(alpha * 0.85)
+                    alpha = int(alpha * 0.95)
                 rgb = rgb_head if k == 0 else rgb_tail
                 d.text((col + 4, y), bit, font=font, fill=(*rgb, alpha))
         frame = Image.alpha_composite(base, layer).convert("RGB")
